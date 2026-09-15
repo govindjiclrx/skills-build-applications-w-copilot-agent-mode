@@ -1,0 +1,77 @@
+:root {
+  --text: #4f5d58;
+  --text-h: #163329;
+  --muted: #74827d;
+  --bg: #f6f2e8;
+  --border: #dfe2d5;
+  --accent: #1f6f56;
+  --accent-soft: #dff2e6;
+  --shadow:
+    rgba(24, 54, 43, 0.08) 0 10px 20px -8px, rgba(24, 54, 43, 0.05) 0 4px 8px -4px;
+
+  --sans: Avenir, Montserrat, Verdana, sans-serif;
+  --heading: Georgia, 'Times New Roman', serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 17px/145% var(--sans);
+  letter-spacing: 0;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    linear-gradient(120deg, rgba(31, 111, 86, 0.1), transparent 42%),
+    radial-gradient(circle at top right, rgba(235, 177, 55, 0.16), transparent 34%),
+    var(--bg);
+}
+
+#root {
+  width: 1180px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  box-sizing: border-box;
+  background: rgba(255, 253, 248, 0.84);
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 44px;
+  letter-spacing: 0;
+  line-height: 105%;
+  margin: 0;
+  @media (max-width: 1024px) {
+    font-size: 34px;
+  }
+}
+h2 {
+  font-size: 32px;
+  line-height: 118%;
+  letter-spacing: 0;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 26px;
+  }
+}
+p {
+  margin: 0;
+}
