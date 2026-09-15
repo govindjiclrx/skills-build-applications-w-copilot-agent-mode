@@ -18,6 +18,7 @@ app.use(cors({ origin: frontendOrigin }));
 app.use(express.json());
 app.use('/api', apiRouter);
 
+
 app.get('/api/health', (_request, response) => {
   response.json({
     status: 'ok',
